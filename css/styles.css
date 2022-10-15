@@ -8,6 +8,7 @@
   --hero-btn-color: #188ce8;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --active-btn-bg-color: #f5f4fa;
+  --team-bg-color: #f5f4fa;
   --border-color: #eeeeee;
 }
 
@@ -17,7 +18,39 @@ body {
   background-color: var(--primary-white-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -30,10 +63,23 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* ----------------------INDEX-HEADER--------------------- */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-link-logo {
+  margin-right: 93px;
+}
+
 .logo {
   font-family: 'raleway';
   font-weight: 700;
@@ -56,6 +102,37 @@ body {
   color: var(--accent-color);
 }
 
+.header-container {
+  display: flex;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrap {
+  margin-left: auto;
+}
+
+.header-link-logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-link-logo,
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -71,6 +148,9 @@ body {
 
 .header-tel,
 .header-mail {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -88,9 +168,13 @@ body {
 /* -------------------------INDEX-HERO-------------------- */
 .hero {
   background: var(--bg-color);
+  padding: 200px 0;
 }
 
 .hero-tittle {
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -100,12 +184,15 @@ body {
   color: var(--primary-white-color);
 }
 
-.hero-btn {
+.hero-button {
   font-family: inherit;
+  margin: 0 auto;
+  display: block;
   border-radius: 4px;
   border: 0;
   padding: 10px 32px;
-  font-family: 'Roboto';
+  min-width: 216px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -116,21 +203,19 @@ body {
   color: var(--primary-white-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  cursor: pointer;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-button:hover,
+.hero-button:focus {
   color: var(--primary-white-color);
   background: var(--hero-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
-  cursor: pointer;
 }
 
 /* ---------------------INDEX-ADVANCES--------------------- */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -145,12 +230,22 @@ body {
 }
 
 .advances-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-tittle-color);
+}
+
+.advances-list {
+  display: flex;
+  gap: 30px;
+}
+
+.advances-item {
+  width: 270px;
 }
 
 .advances-after-title {
@@ -160,8 +255,14 @@ body {
   color: var(--primary-text-color);
 }
 
-/* -------------------INDEX-ABOUT US--------------------- */
+/* -------------------INDEX-ABOUT-US--------------------- */
+
+.about-us {
+  padding-top: 0;
+}
+
 .about-us-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -170,29 +271,50 @@ body {
   color: var(--primary-tittle-color);
 }
 
+.about-us-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-us-item {
+  width: calc((100% - 60px) / 3);
+}
 /* -------------------------INDEX-TEAM------------------ */
 
 .team {
-  background: var(--active-btn-bg-color);
+  background: var(--team-bg-color);
+}
+
+.team-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-tittle-color);
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 
 .team-item {
+  width: calc((100% - 90px) / 4);
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-tittle-color);
+.text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -208,9 +330,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
 /* ---------------------INDEX-FOOTER-----------------------*/
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--bg-color);
 }
 
@@ -222,12 +347,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
+
+.footer-list {
+  margin-top: 20px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-link-address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-  font-style: normal;
 }
 
 .footer-link-mail,
@@ -236,7 +369,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-link-color);
-  font-style: normal;
 }
 
 .footer-link-address:hover,
@@ -250,8 +382,16 @@ body {
 
 /* -------------------PORTFOLIO-BUTTON------------------ */
 
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
 .button-primary {
   font-family: inherit;
+  padding: 6px 22px;
   border-radius: 4px;
   border: 0;
   padding: 6px 22px;
@@ -262,8 +402,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-tittle-color);
   background: var(--active-btn-bg-color);
-
-  cursor: pointer;
 }
 
 .button-primary:hover,
@@ -273,18 +411,31 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  cursor: pointer;
   border: 0;
 }
 
 /* ----------------------PORTFOLIO-MAIN-------------------- */
 
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .main-list-item {
+  width: calc((100% - 60px) / 3);
   background: var(--primary-white-color);
-  border: 1px solid var(--border-color);
+}
+
+.pf-text {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .main-list-tittle {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
