@@ -364,20 +364,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.team-soc-ikon {
   fill: #afb1b8;
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent-color);
-}
-
-.team-soc-link:hover .team-soc-ikon,
-.team-soc-link:focus .team-soc-ikon {
   fill: var(--primary-white-color);
+  outline: none;
 }
 
 /* ---------------------INDEX-CLIENT----------------------- */
@@ -410,7 +404,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #afb1b8;
 }
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+  outline: none;
+}
+
 /* ---------------------INDEX-FOOTER-----------------------*/
 
 .footer {
