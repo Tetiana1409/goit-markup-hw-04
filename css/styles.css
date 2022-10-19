@@ -391,13 +391,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #afb1b8;
+  color: #afb1b8;
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent-color);
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
   outline: none;
 }
 
@@ -435,13 +435,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #afb1b8;
+  color: #afb1b8;
 }
 
 .client-link:hover,
 .client-link:focus {
   border-color: var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--accent-color);
   outline: none;
 }
 
