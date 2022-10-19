@@ -148,7 +148,10 @@ img {
 
 .header-tel,
 .header-mail {
-  display: block;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -163,6 +166,10 @@ img {
 .header-tel:focus,
 .header-mail:focus {
   color: var(--accent-color);
+}
+
+.header-ikon {
+  fill: currentColor;
 }
 
 /* -------------------------INDEX-HERO-------------------- */
@@ -241,6 +248,22 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.advances-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: var(--active-btn-bg-color);
+  border-radius: 4px;
+  color: var(--primary-tittle-color);
+}
+
+.advances-ikon {
+  fill: currentColor;
 }
 
 .advances-title {
@@ -357,6 +380,10 @@ img {
   height: 44px;
 }
 
+.team-soc-ikon {
+  fill: currentColor;
+}
+
 .team-soc-link {
   width: 100%;
   height: 100%;
@@ -394,6 +421,10 @@ img {
 .client-item {
   width: calc((100% - 150px) / 6);
   height: 92px;
+}
+
+.client-soc-ikon {
+  fill: currentColor;
 }
 
 .client-link {
