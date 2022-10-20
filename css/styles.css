@@ -565,6 +565,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-tittle-color);
   background: var(--active-btn-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .button-primary:hover,
@@ -573,8 +574,6 @@ img {
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  border: 0;
 }
 
 /* ----------------------PORTFOLIO-MAIN-------------------- */
@@ -588,6 +587,12 @@ img {
 .main-list-item {
   width: calc((100% - 60px) / 3);
   background: var(--primary-white-color);
+  border: 1px solid var(--border-color);
+}
+
+.main-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .pf-text {
